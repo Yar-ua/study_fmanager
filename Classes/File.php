@@ -13,8 +13,8 @@ class File extends Entity
     {
         parent::__construct($location);
 
-        $data = pathinfo($this->path);
-        $this->type = $data['extension'];
+        // $data = pathinfo($this->path);
+        $this->type = ( pathinfo($this->path) )['extension'];
     }
 
     /**
